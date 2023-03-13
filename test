@@ -1,0 +1,34 @@
+// while (true) {
+//     var sendButton = text("搜索").findOne();
+//     sendButton.click();
+//     check_buy()
+//     sleep(random(1000, 10000))
+// }
+
+
+// log("wait for search page")
+// waitForActivity("com.ddsy.songyao.activity.SearchListPlusActivity")
+// log("start")
+// check_buy()
+
+
+
+// function check_buy() {
+//     var i = 1;
+//     className("android.widget.RelativeLayout").depth(10).find().forEach(function (one_product) {
+//         var desc = one_product.findOne(className("android.widget.TextView").textContains("小儿"));
+//         if (desc != null) {
+//             var add_shop_cart = one_product.findOne(id("oneKeyToShopCar"))
+//             if (add_shop_cart != null) {
+//                 var click_result = add_shop_cart.click()
+//                 media.playMusic("/sdcard/1.wav", 1, true);
+//                 sleep(media.getMusicDuration() * 3);
+//                 log("in stock" + click_result);
+//             } else {
+//                 log("no stock")
+//             }
+//         }
+
+//     });
+// }
+
